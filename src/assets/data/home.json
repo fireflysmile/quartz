@@ -1,0 +1,124 @@
+{
+    "List Duration": [
+        {
+            "value": "1 Week",
+            "label": "1 Week"
+        }
+        ,{
+            "value": "2 Week",
+            "label": "2 Week"
+        }
+        ,{
+            "value": "2 Week",
+            "label": "2 Week"
+        }
+        ,{
+            "value": "2 Week",
+            "label": "2 Week"
+        }
+        ,{
+            "value": "2 Week",
+            "label": "2 Week"
+        }
+        ,{
+            "value": "2 Week",
+            "label": "2 Week"
+        }
+    ],
+    "Total Conflicts":1003,
+    "Records Auto-Processed":888,
+    "Manual Intervention Needed":23,
+    "Auto-Rate":88.6,
+    "List Progress":[
+        {
+            "id":1,
+            "selected": false,
+            "Well": "Ailurian",
+            "Stage No": 2310,
+            "API": "lipsum",
+            "Records Affected": 18,
+            "Duplicates": 8,
+            "Status":"Not Processed"
+        }
+        ,{
+            "id":2,
+            "selected": false,
+            "Well": "Gehringer",
+            "Stage No": 123,
+            "API": "dolorsit",
+            "Records Affected": 12,
+            "Duplicates": 4,
+            "Status":"Completed"
+        }
+        ,{
+            "id":3,
+            "selected": false,
+            "Well": "Lohringer",
+            "Stage No": 4,
+            "API": "amet",
+            "Records Affected": 4,
+            "Duplicates": 12,
+            "Status":"Completed"
+        }
+        ,{
+            "id":4,
+            "selected": false,
+            "Well": "Lohringer",
+            "Stage No": 4,
+            "API": "amet",
+            "Records Affected": 213,
+            "Duplicates": 4,
+            "Status":"Not Processed"
+        }
+        ,{
+            "id":5,
+            "selected": false,
+            "Well": "Ailurian",
+            "Stage No": 2310,
+            "API": "lipsum",
+            "Records Affected": 18,
+            "Duplicates": 8,
+            "Status":"Needs Manual Review"
+        }
+        ,{
+            "id":6,
+            "selected": false,
+            "Well": "Gehringer",
+            "Stage No": 123,
+            "API": "dolorsit",
+            "Records Affected": 12,
+            "Duplicates": 4,
+            "Status":"Completed"
+        }
+        ,{
+            "id":7,
+            "selected": false,
+            "Well": "Lohringer",
+            "Stage No": 4,
+            "API": "amet",
+            "Records Affected": 4,
+            "Duplicates": 12,
+            "Status":"Completed"
+        }
+        ,{
+            "id":8,
+            "selected": false,
+            "Well": "Lohringer",
+            "Stage No": 4,
+            "API": "amet",
+            "Records Affected": 213,
+            "Duplicates": 4,
+            "Status":"Not Processed"
+        }
+        ,{
+            "id":9,
+            "selected": false,
+            "Well": "Ailurian",
+            "Stage No": 2310,
+            "API": "lipsum",
+            "Records Affected": 18,
+            "Duplicates": 8,
+            "Status":"Needs Manual Review"
+        }
+    ]
+}

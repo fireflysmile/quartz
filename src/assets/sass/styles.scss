@@ -1,0 +1,87 @@
+@import 'colors';
+@import 'fonts';
+
+/* =Reset default browser CSS.
+-------------------------------------------------------------- */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {border: 0;font-family: inherit;font-size: 100%;font-style: inherit;font-weight: inherit;margin: 0;outline: 0;padding: 0;vertical-align: middle;}
+:focus {outline: 0;}
+
+ol, ul {list-style: none;}
+table {border-collapse: separate;border-spacing: 0;}
+caption, th, td {font-weight: normal;text-align: left;}
+blockquote:before, blockquote:after,q:before, q:after {content: "";}
+blockquote, q {quotes: "" "";}
+a img{border: 0;}
+figure{margin:0}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block;}
+/* -------------------------------------------------------------- */
+
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+html{
+    position: relative;
+    min-height: 100%;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+textarea, input[type="text"] {
+    -webkit-appearance: none;
+}
+textarea {
+   resize: none;
+}
+input[type=text]::-ms-clear {
+    display: none;
+}
+a:hover, a:focus, a:hover p, select:hover, select:focus, select:active{
+    text-decoration: none;
+    outline: none;
+}
+a, a:link,a:active, span{
+    text-decoration: none;
+    outline: none;
+}
+
+body {
+    font-family: ProximaNova-Regular;
+    background-color: #eff3f6;
+}
+.qz-body {
+    background-color: $color-bg;
+    padding-top: 20px;
+    padding-bottom: 150px;
+    .qz-select {
+        min-width: 150px;
+        margin-left: 10px;
+        margin-right: 10px;
+        background: #FFFFFF;
+        border: 1px solid #CED0DA;
+        border-radius: 4px;
+        display: inline-block;
+        .ng-control {
+            border: none;
+        }
+    }
+    .decimal {
+        font-size: 16px !important;
+        line-height: 0;
+        vertical-align: baseline
+    }
+}

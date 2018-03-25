@@ -1,0 +1,237 @@
+{
+    "listTable": [
+        {
+            "channel":"CLEAN_RATE_DUP_0",
+            "min":20,
+            "max":335,
+            "mean":230.56,
+            "everage":150.5620,
+            "range":20
+        }
+        ,{
+            "channel":"CLEAN_RATE_DUP_1",
+            "min":20,
+            "max":335,
+            "mean":230.56,
+            "everage":150.5620,
+            "range":20
+        }
+        ,{
+            "channel":"CLEAN_RATE_DUP_2",
+            "min":20,
+            "max":335,
+            "mean":230.56,
+            "everage":150.5620,
+            "range":20
+        }
+        ,{
+            "channel":"CLEAN_RATE_DUP_3",
+            "min":20,
+            "max":335,
+            "mean":230.56,
+            "everage":150.5620,
+            "range":20
+        }
+    ],
+    "lineChart" : [
+        {
+        "key": "CLEAN_RATE_DUP_0",
+        "values": [
+            {
+            "label": "2017/07/01",
+            "value": 169
+            },
+            {
+            "label": "2017/07/05",
+            "value": 150
+            },
+            {
+            "label": "2017/08/12",
+            "value": 163
+            },
+            {
+            "label": "2017/09/14",
+            "value": 170
+            },
+            {
+            "label": "2017/10/14",
+            "value": 175
+            },
+            {
+            "label": "2017/11/14",
+            "value": 155
+            },
+            {
+            "label": "2017/12/14",
+            "value": 150
+            },
+            {
+            "label": "2017/12/24",
+            "value": 174
+            },
+            {
+            "label": "2018/1/14",
+            "value": 166
+            },
+            {
+            "label": "2018/02/14",
+            "value": 180
+            },
+            {
+            "label": "2018/03/14",
+            "value": 163
+            }
+        ]
+        },
+        {
+        "key": "CLEAN_RATE_DUP_1",
+        "values": [
+            {
+            "label": "2017/07/1",
+            "value": 130
+            },
+            {
+            "label": "2017/08/12",
+            "value": 140
+            },
+            {
+            "label": "2017/09/14",
+            "value": 127
+            },
+            {
+            "label": "2017/09/25",
+            "value": 115
+            },
+            {
+            "label": "2017/10/14",
+            "value": 120
+            },
+            {
+            "label": "2017/11/14",
+            "value": 122
+            },
+            {
+            "label": "2017/11/22",
+            "value": 133
+            },
+            {
+            "label": "2017/12/14",
+            "value": 137
+            },
+            {
+            "label": "2018/1/14",
+            "value": 130
+            },
+            {
+            "label": "2018/02/14",
+            "value": 115
+            },
+            {
+            "label": "2018/03/14",
+            "value": 128
+            }
+        ]
+        },{
+        "key": "CLEAN_RATE_DUP_2",
+        "values": [
+            {
+            "label": "2017/07/1",
+            "value": 40
+            },
+            {
+            "label": "2017/08/12",
+            "value": 46
+            },
+            {
+            "label": "2017/09/02",
+            "value": 75
+            },
+            {
+            "label": "2017/09/14",
+            "value": 52
+            },
+            {
+            "label": "2017/10/02",
+            "value": 58
+            },
+            {
+            "label": "2017/10/14",
+            "value": 42
+            },
+            {
+            "label": "2017/11/14",
+            "value": 59
+            },
+            {
+            "label": "2017/11/22",
+            "value": 50
+            },
+            {
+            "label": "2017/12/14",
+            "value": 86
+            },
+            {
+            "label": "2018/1/14",
+            "value": 66
+            },
+            {
+            "label": "2018/02/14",
+            "value": 77
+            },
+            {
+            "label": "2018/03/14",
+            "value": 63
+            }
+        ]
+        },
+        {
+        "key": "CLEAN_RATE_DUP_3",
+        "values": [
+            {
+            "label": "2017/07/1",
+            "value": 99
+            },
+            {
+            "label": "2017/08/02",
+            "value": 95
+            },
+            {
+            "label": "2017/08/12",
+            "value": 105
+            },
+            {
+            "label": "2017/09/14",
+            "value": 80
+            },
+            {
+            "label": "2017/10/14",
+            "value": 70
+            },
+            {
+            "label": "2017/11/02",
+            "value": 95
+            },
+            {
+            "label": "2017/11/14",
+            "value": 73
+            },
+            {
+            "label": "2017/12/14",
+            "value": 89
+            },
+            {
+            "label": "2018/1/14",
+            "value": 69
+            },
+            {
+            "label": "2018/02/14",
+            "value": 65
+            },
+            {
+            "label": "2018/03/14",
+            "value": 105
+            }
+        ]
+        }
+    ]
+}

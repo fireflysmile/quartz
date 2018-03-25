@@ -1,0 +1,18 @@
+<div class="left radial-progress">
+  <div class="circle">
+    <div class="shadow" #shadow></div>
+    <div class="mask full" #full>
+      <div class="fill" #rank [ngStyle]="{'background-color': color}"></div>
+    </div>
+    <div class="mask half" #half>
+      <div class="fill" #fix1 [ngStyle]="{'background-color': color}"></div>
+      <div class="fill fix" #fix2 ></div>
+    </div>
+  </div>
+  <div class="inset" #inset>
+    <div class="percentage">
+      <p>{{number}}<span [ngClass]="bigPercent ? 'percentage-text' : ''" *ngIf="isPercent">%</span></p>
+      <span>{{SubText}}</span>
+    </div>
+  </div>
+</div>

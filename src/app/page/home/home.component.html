@@ -1,0 +1,78 @@
+<div class="home-content container-fix">
+    <div class="top-base">
+        <div class="box-child first">
+            <div class="pull-left">
+                <span class="label-box">Duration</span>
+                <div class="clearfix"></div>
+                <app-dropdown-no-boder [values]="dropdownDuration" [(activeValue)]="dropdownDurationActive" (select)="action($event)"></app-dropdown-no-boder>
+            </div>
+            <div class="pull-left chart"></div>
+        </div>
+        <div class="box-child">
+            <span class="label-box">Total Conflicts</span>
+            <p class="number">{{TotalConflicts}}</p>
+        </div>
+        <div class="box-child border">
+            <span class="label-box">Records Auto-Processed</span>
+            <p class="number color-green">{{RecordsAutoProcessed}}</p>
+        </div>
+        <div class="box-child border">
+            <span class="label-box">Manual Intervention Needed</span>
+            <p class="number color-orange">{{ManualInterventionNeeded}}</p>
+        </div>
+        <div class="box-child border">
+            <span class="label-box">Auto-Rate</span>
+            <p class="number color-black">{{AutoRate + "%"}}</p>
+        </div>
+        
+    </div>
+    <div class="main-content">
+        <h3 class="title-page">Latest Status <a href="javascript:;"  (click)="progressAll()"><i class="icon-progress"></i>Process All</a></h3>
+        <table class="table user-style qz-table">
+            <thead>
+                <tr>
+                    <th>
+                        <label class="chk">
+                            <input type="checkbox" class="chkctrl" [(ngModel)]="selectedAll" (change)="selectAll()">
+                            <i class="icon"></i>
+                        </label>
+                    </th>
+                    <th class="th-align-center">Well</th>
+                    <th>Stage No</th>
+                    <th>API</th>
+                    <th><span class="qz-align-right">Records Affected</span></th>
+                    <th><span class="qz-align-right">Duplicates</span></th>
+                    <th>Status</th>
+                    <th class="th-align-center">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let item of listProgress; let i=index">
+                    <td>
+                        <label class="chk">
+                            <input type="checkbox" class="chkctrl" [(ngModel)]="item['selected']" (change)="checkIfAllSelected()">
+                            <i class="icon"></i>
+                        </label>
+                    </td>
+                    <td class="qz-bg-white"><span>{{item['Well']}}</span></td>
+                    <td class="qz-bg-white"><span>{{item['Stage No']}}</span></td>
+                    <td class="qz-bg-white">{{item['API']}}</td>
+                    <td class="qz-bg-white"><span class="qz-align-right">{{item['Records Affected']}}</span></td>
+                    <td class="qz-bg-white"><span class="qz-align-right">{{item['Duplicates']}}</span></td>
+                    <td class="qz-bg-white">
+                        <span class="fa fa-circle qz-fa-circle" *ngIf="item['Status'] == 'Not Processed'" [ngStyle]="{'color':'#D4D4D4'}"></span>
+                        <span class="fa fa-circle qz-fa-circle" *ngIf="item['Status'] == 'Completed'" [ngStyle]="{'color':'#006BD5'}"></span>
+                        <span class="fa fa-circle qz-fa-circle" *ngIf="item['Status'] == 'Needs Manual Review'" [ngStyle]="{'color':'#F5A623'}"></span>
+                        {{item['Status']}}
+                    </td>
+                    <td class="qz-bg-white td-align-center">
+                        <a  href="javascript:;" *ngIf="item['Status'] == 'Not Processed' && item['starting']" class="action hover" (click)="isProcessing(item.id - 1)">Process</a>
+                        <a href="javascript:;"  *ngIf="item['Status'] == 'Completed'" class="action no-border"><i class="icon-report"></i> View Report</a>
+                        <a href="javascript:;" *ngIf="item['Status'] == 'Needs Manual Review'" class="action no-border"><i class="icon-review"></i> Review</a>
+                        <a href="javascript:;" *ngIf="item['processing'] && item['Status'] == 'Not Processed'" class="action no-border fix-color"><i class="icon-processing"></i> Processing...</a>
+                    </td>
+                </tr>
+            </tbody>
+            </table>
+    </div>
+</div>

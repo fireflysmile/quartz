@@ -1,0 +1,55 @@
+/*style progress bar*/
+.radial-progress{
+    position: relative;
+}
+.radial-progress .inset {
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+}
+.radial-progress .inset p {
+    width: auto;
+    height: auto;
+    border-radius: 0;
+    background: none;
+    text-align: center;
+}
+.radial-progress .circle .mask,
+.radial-progress .circle .fill {
+    border-radius: 50%;
+    transition: transform 1s ease 0s;
+}
+.radial-progress .circle .mask,
+.radial-progress .circle .fill,
+.radial-progress .circle .shadow {
+    border-radius: 50%;
+    position: absolute;
+}
+.radial-progress .circle .shadow {
+    background: #f0f0f0;
+}
+
+
+.radial-progress .circle .mask .fill {
+    background-color: #ffed00;
+}
+#transform{
+  .fill{
+    background-color: #00ad5a;
+  }
+}
+div.percentage{
+    padding-top: 9px;
+    text-align: center;
+}
+div.percentage p{
+    color: #000;
+    font-weight: bold;
+    background: transparent;
+}
+div.percentage span{
+    color: #000000;
+    padding-top: 0;
+    text-transform: uppercase;
+}
+/*end style progress bar*/

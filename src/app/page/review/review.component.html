@@ -1,0 +1,81 @@
+<div class="qz-body">
+    <div class="container qz-container">
+        <div class="qz-block qz-controls">
+            <div class="form-inline">
+                <span class="qz-label"> WELL NAME </span>
+                <app-dropdown [values]="listWellName" [activeValue]="wellNameActive" (select)="action($event)"></app-dropdown>
+            </div>
+            <div class="form-inline">
+                <span class="qz-label"> STAGE NO </span>
+                <app-dropdown [values]="listStageNo" [activeValue]="stageNo" (select)="action($event)"></app-dropdown>
+            </div>
+            <div class="form-inline">
+                <span class="qz-label"> CHANNEL PREFIX </span>
+                <app-dropdown [values]="listChannelPrefix" [activeValue]="channelPrefix" (select)="action($event)"></app-dropdown>
+            </div>
+        </div>
+        <div class="qz-block">
+            <div class="qz-block-header">Channel Statistics</div>
+            <div class="row qz-channel-statistics">
+                <div class="col-sm-4">
+                    <div class="qz-channel-block">
+                        <div class="qz-item"> <span class="qz-label">MIN VALUE</span> <span class="qz-value">38</span> </div>
+                        <div class="qz-item"> <span class="qz-label">MAX VALUE</span> <span class="qz-value">223</span> </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="qz-channel-block">
+                        <div class="qz-item"> <span class="qz-label">MEAN VALUE</span> <span class="qz-value" innerHTML="{{ '176.00' | numberstyle }}"></span> </div>
+                        <div class="qz-item"> <span class="qz-label">MEDIAN VALUE</span> <span class="qz-value" innerHTML="{{ '223.56' | numberstyle }}"></span> </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="qz-channel-block">
+                        <div class="qz-item qz-item-lg"> <span class="qz-label">VARIANCE STATISTIC</span> <span class="qz-value">2.3</span> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="qz-block">
+            <div class="qz-block-header">Statistics Per Channel</div>
+            <div class="qz-statistics">
+                <table class="table table-bordered qz-table">
+                    <thead>
+                        <tr>
+                            <th>Channel</th>
+                            <th class="text-right">Min</th>
+                            <th class="text-right">Max</th>
+                            <th class="text-right">Mean</th>
+                            <th class="text-right">Average</th>
+                            <th class="text-right">% in Range</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let data of listChannel">
+                            <td><span class="fa fa-circle qz-fa-circle" style="color:blue"></span> {{data.channel}}</td>
+                            <td class="text-right">{{data.min}}</td>
+                            <td class="text-right">{{data.max}}</td>
+                            <td class="text-right">{{data.mean}}</td>
+                            <td class="text-right">{{data.everage}}</td>
+                            <td class="text-right">{{data.range + "%"}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="qz-channel-chart">
+            <div class="pull-left qz-header">Channel Value vs Time</div>
+            <div class="pull-right">
+                <app-dropdown [values]="listTimeRange" [activeValue]="timeRange" (select)="action($event)"></app-dropdown>
+            </div>
+            <app-chart [data]="chart"></app-chart>
+        </div>
+        <span> Based on the statistics choose a Column which should be used for master record </span>
+        <div class="qz-validation">
+            <label class="text-uppercase"> Validation </label>
+            <app-dropdown [values]="listChannelName" [activeValue]="channelValidation" (select)="action($event)"></app-dropdown>
+            <button class="btn btn-primary"> Apply </button>
+        </div>
+    </div>
+</div>
+<!-- <app-circle total="100" number="30" color="blue" radius="100"></app-circle> -->
